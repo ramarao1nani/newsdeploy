@@ -6,13 +6,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="{% static 'css/output.css' %}">
+		<link rel="stylesheet" href="{% static 'css/output.css' %}">
 	</head>
 
-	<body class="bg-pink-200">
-		
+	<body class="bg-indigo-500">
 	<div class="grid grid-cols-1 md:grid-cols-5 sm:grid-cols-2 bg-gradient-to-r from-blue-400 via-purple-300 to-blue-400  py-3 m-4 rounded-lg px-5 place-items-center ">
-		<a href='/news'><button class="py-2">Home</button></a>
+		<a href='{% url "briefs:home" %}'><button class="py-2">Home</button></a>
 		<a href='/news/india'><button class="py-2">India</button></a>
 		<a href='/news/business'><button class="py-2">Business</button></a>
 		<a href='/news/technology'><button class="py-2">Technology</button></a>
