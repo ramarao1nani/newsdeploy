@@ -1,0 +1,13 @@
+{% extends 'briefs/base.html' %}
+{% load static %}
+
+{% block body %}
+    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2">
+        {% for a,b in news %}
+            <div class="@apply bg-purple-600 transition duration-700 ease-in-out transform motion-safe:hover:scale-105 text-white m-4 p-5 shadow-2xl rounded-lg hover:text-black hover:bg-white hover:border-2 border-purple-800;}">
+                <h5 class="font-bold text-black p-3 "> {{a}}</h5>
+                <h5 class="border-t-2 border-white p-3 hover:border-purple-800">{{b}}</h5>
+            </div>  
+        {% endfor %}
+    </div>
+{%  endblock body %} 
